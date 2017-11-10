@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>清欢</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+			function MyAutoRun()
+			{
+				$("#J-protocol").addClass("show");
+				$("#J-mask").css("display", "block");
+			}
+			window.onload=MyAutoRun; //仅需要加这一句
+			$(function(){
+
+				var clickName =$("#clickName");
+				clickName.click(function(){
+					var whoName = $("#whoName").val().trim();
+					if(whoName=="雯雯"){
+						$("#J-protocol").removeClass("show");
+						$("#J-mask").css("display", "none");
+					}
+				})
+			})
+		</script>
+	</head>
+
+
+	<body>
+
+	<style>
+		.popup_box {
+			display:none;
+			position:fixed;
+			z-index:9999;
+			left:50%;
+			top:50%;
+			width:100%;
+			height:100%;
+			padding:19px;
+			margin-left:-50%;
+			background-color:#fff
+		}
+		.popup_protocol_box {
+			line-height:1.5;
+			overflow-y:auto
+		}
+		.popup_layer {
+			position:fixed;
+			display:none;
+			z-index:999;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			opacity:.5;
+			background:black;
+			filter:alpha(opacity=50)
+		}
+		.show {
+			display:block
+		}
+	</style>
+	<div id="J-mask" class="popup_layer">
+	</div>
+	<div id="J-protocol" class="popup_box popup_protocol_box" style="margin-top: -231px;">
+		<div class="header">
+			<h2>
+			我是谁？
+			</h2>
+			<input type="text"  id="whoName" name="name"
+				   value=" "/>
+				<button type="button" id="clickName">确定</button>
+		</div>
+
+
+	</div>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="#">雯雯</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#">首页</a></li>
+								<li><a href="./templates/mysumes.html" target="_blank">简历</a></li>
+								<li><a href="#">作品</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">艺术源于生活的感悟</a></h2>
+										<p>喜欢清桌面的习惯真的一点都不好，真的整理作品的时候，就会我靠我图呢，我靠怎么就这几个了，，，，，，，引以为戒吧</p>
+									</div>
+									<div class="meta">
+										<p class="published" >尽心尽力 尽善尽美</p>
+										<a href="#" class="author"><span class="name">桃之yaoy</span><img src="images/picture.png" alt="" /></a>
+									</div>
+								</header>
+								<a href="#" class="image featured"><img src="./images/work3.jpg" alt="" /></a>
+								<p></p>
+							</article>
+							<article class="post">
+							<header>
+								<div class="title">
+									<h2><a href="#">工作也是很有趣的</a></h2>
+									<p>你不懂我对一切美好的执着</p>
+								</div>
+								<div class="meta">
+									<p class="published">尽心尽力 尽善尽美</p>
+									<a href="#" class="author"><span class="name">桃之yaoy</span><img src="images/picture.png" alt="" /></a>
+								</div>
+							</header>
+							<a href="#" class="image featured"><img src="./images/work4.jpg" alt="" /></a>
+							<p></p>
+						</article>
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a href="#">阳光灿烂的形状</a></h2>
+									<p>松鼠陪着核桃 在庭院捉迷藏</p>
+								</div>
+								<div class="meta">
+									<p class="published">尽心尽力 尽善尽美</p>
+									<a href="#" class="author"><span class="name">桃之yaoy</span><img src="images/picture.png" alt="" /></a>
+								</div>
+							</header>
+							<a href="#" class="image featured"><img src="./images/work2.jpg" alt="" /></a>
+							<p></p>
+						</article>
+
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+							<section id="intro">
+								<a href="#" class="logo"><img src="images/picture.png" alt="" /></a>
+								<header>
+									<h2>从现在开始的</h2>
+									<p>做一个有气质的仙女</p>
+								</header>
+							</section>
+
+						<!-- Mini Posts -->
+							<section>
+								<div class="mini-posts">
+
+									<!-- Mini Post -->
+										<article class="mini-post">
+											<header>
+												<h3><a href="#">在那些错过的季节里 有着不确实的情感</a></h3>
+												<time class="published" datetime="2017-11-3">2017-11-03</time>
+												<a href="#" class="author"><img src="images/picture.png" alt="" /></a>
+											</header>
+											<a href="#" class="image"><img src="images/touxiang.jpg" alt="" /></a>
+										</article>
+								</div>
+							</section>
+						<!-- Footer -->
+							<section id="footer">
+
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+
+	</body>
+</html>
